@@ -49,33 +49,15 @@ var lyr_Edinburghcommunityservices_2 = new ol.layer.Vector({
     <img src="styles/legend/Edinburghcommunityservices_2_5.png" /> Uniformed organisations<br />\
     <img src="styles/legend/Edinburghcommunityservices_2_6.png" /> Youth Work and Youth Clubs<br />\
     <img src="styles/legend/Edinburghcommunityservices_2_7.png" /> Other<br />' });
-var format_EH1postaldistrict_3 = new ol.format.GeoJSON();
-var features_EH1postaldistrict_3 = format_EH1postaldistrict_3.readFeatures(json_EH1postaldistrict_3, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_EH1postaldistrict_3 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_EH1postaldistrict_3.addFeatures(features_EH1postaldistrict_3);
-var lyr_EH1postaldistrict_3 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_EH1postaldistrict_3, 
-                style: style_EH1postaldistrict_3,
-                popuplayertitle: 'EH1 postal district',
-                interactive: true,
-                title: '<img src="styles/legend/EH1postaldistrict_3.png" /> EH1 postal district'
-            });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_Edinburghward_1.setVisible(true);lyr_Edinburghcommunityservices_2.setVisible(true);lyr_EH1postaldistrict_3.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_Edinburghward_1,lyr_Edinburghcommunityservices_2,lyr_EH1postaldistrict_3];
+lyr_OpenStreetMap_0.setVisible(true);lyr_Edinburghward_1.setVisible(true);lyr_Edinburghcommunityservices_2.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_Edinburghward_1,lyr_Edinburghcommunityservices_2];
 lyr_Edinburghward_1.set('fieldAliases', {'FID': 'FID', 'WD25CD': 'WD25CD', 'WD25NM': 'Ward name', 'WD25NMW': 'WD25NMW', 'LAD25CD': 'LAD25CD', 'LAD25NM': 'LAD25NM', 'LAD25NMW': 'LAD25NMW', 'BNG_E': 'BNG_E', 'BNG_N': 'BNG_N', 'LONG': 'LONG', 'LAT': 'LAT', 'GlobalID': 'GlobalID', });
 lyr_Edinburghcommunityservices_2.set('fieldAliases', {'Name of Service': 'Name of Service', 'Service Typology': 'Service Typology', 'Organisation Providing Service': 'Organisation Providing Service', 'Associated Space(s)': 'Associated Space(s)', 'Website Link for Service': 'Website Link for Service', 'Contact No. for Service': 'Contact No. for Service', 'Email for Service': 'Email for Service', 'Description of service': 'Description of service', 'Data source': 'Data source', 'Assoc web link': 'Assoc web link', 'Postcode': 'Postcode', 'Ward': 'Ward', 'Latitude': 'Latitude', 'Longitude': 'Longitude', });
-lyr_EH1postaldistrict_3.set('fieldAliases', {'fid': 'fid', 'DistID': 'DistID', 'PostDist': 'PostDist', 'PostArea': 'PostArea', 'DistNum': 'DistNum', 'PCCnt': 'PCCnt', 'AnomCnt': 'AnomCnt', 'RefPC': 'RefPC', 'x': 'x', 'y': 'y', 'Sprawl': 'Sprawl', 'Locale': 'Locale', });
 lyr_Edinburghward_1.set('fieldImages', {'FID': 'Range', 'WD25CD': 'TextEdit', 'WD25NM': 'TextEdit', 'WD25NMW': 'TextEdit', 'LAD25CD': 'TextEdit', 'LAD25NM': 'TextEdit', 'LAD25NMW': 'TextEdit', 'BNG_E': 'Range', 'BNG_N': 'Range', 'LONG': 'TextEdit', 'LAT': 'TextEdit', 'GlobalID': 'TextEdit', });
 lyr_Edinburghcommunityservices_2.set('fieldImages', {'Name of Service': 'TextEdit', 'Service Typology': 'TextEdit', 'Organisation Providing Service': 'TextEdit', 'Associated Space(s)': 'TextEdit', 'Website Link for Service': 'TextEdit', 'Contact No. for Service': 'TextEdit', 'Email for Service': 'TextEdit', 'Description of service': 'TextEdit', 'Data source': 'TextEdit', 'Assoc web link': 'TextEdit', 'Postcode': 'TextEdit', 'Ward': 'TextEdit', 'Latitude': 'TextEdit', 'Longitude': 'TextEdit', });
-lyr_EH1postaldistrict_3.set('fieldImages', {'fid': 'TextEdit', 'DistID': 'TextEdit', 'PostDist': 'TextEdit', 'PostArea': 'TextEdit', 'DistNum': 'TextEdit', 'PCCnt': 'TextEdit', 'AnomCnt': 'TextEdit', 'RefPC': 'TextEdit', 'x': 'TextEdit', 'y': 'TextEdit', 'Sprawl': 'TextEdit', 'Locale': 'TextEdit', });
 lyr_Edinburghward_1.set('fieldLabels', {'FID': 'hidden field', 'WD25CD': 'hidden field', 'WD25NM': 'no label', 'WD25NMW': 'hidden field', 'LAD25CD': 'hidden field', 'LAD25NM': 'hidden field', 'LAD25NMW': 'hidden field', 'BNG_E': 'hidden field', 'BNG_N': 'hidden field', 'LONG': 'hidden field', 'LAT': 'hidden field', 'GlobalID': 'hidden field', });
 lyr_Edinburghcommunityservices_2.set('fieldLabels', {'Name of Service': 'inline label - visible with data', 'Service Typology': 'inline label - visible with data', 'Organisation Providing Service': 'inline label - visible with data', 'Associated Space(s)': 'inline label - visible with data', 'Website Link for Service': 'hidden field', 'Contact No. for Service': 'hidden field', 'Email for Service': 'hidden field', 'Description of service': 'hidden field', 'Data source': 'hidden field', 'Assoc web link': 'hidden field', 'Postcode': 'inline label - visible with data', 'Ward': 'hidden field', 'Latitude': 'hidden field', 'Longitude': 'hidden field', });
-lyr_EH1postaldistrict_3.set('fieldLabels', {'fid': 'hidden field', 'DistID': 'no label', 'PostDist': 'header label - visible with data', 'PostArea': 'no label', 'DistNum': 'no label', 'PCCnt': 'no label', 'AnomCnt': 'no label', 'RefPC': 'no label', 'x': 'no label', 'y': 'no label', 'Sprawl': 'no label', 'Locale': 'no label', });
-lyr_EH1postaldistrict_3.on('precompose', function(evt) {
+lyr_Edinburghcommunityservices_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

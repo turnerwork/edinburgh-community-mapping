@@ -6,8 +6,8 @@ function categories_Edinburghcommunityservices_2(feature, value, size, resolutio
                 var valueStr = (value !== null && value !== undefined) ? value.toString() : 'default';
                 switch(valueStr) {case 'Adult Learning':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(8,91,160,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(109,52,101,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -15,8 +15,8 @@ function categories_Edinburghcommunityservices_2(feature, value, size, resolutio
                     break;
 case 'Early Years':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(228,102,2,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(8,91,160,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -24,8 +24,8 @@ case 'Early Years':
                     break;
 case 'Employability':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(204,19,42,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(228,102,2,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -33,17 +33,26 @@ case 'Employability':
                     break;
 case 'Older People\'s Care':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(54,133,78,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(204,19,42,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-case 'Other':
+case 'Support for Carers':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(138,212,235,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(138,212,235,1.0)'})}),
+        text: createTextStyle(feature, resolution, labelText, labelFont,
+                              labelFill, placement, bufferColor,
+                              bufferWidth)
+    })];
+                    break;
+case 'Uniformed organisations':
+                    return [ new ol.style.Style({
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(254,150,102,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -51,17 +60,17 @@ case 'Other':
                     break;
 case 'Youth Work and Youth Clubs':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(254,150,102,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(166,105,153,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;
-default:
+case 'Other':
                     return [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 8.000000000000004 + size,
-            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(109,52,101,1.0)'})}),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(229,231,236,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(54,133,78,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
